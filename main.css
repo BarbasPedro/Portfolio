@@ -211,10 +211,9 @@ height: 100%;
     margin: 15px;
   }
 
-  #sobre #texto {
-    width: 100%;
-    margin: auto;
+  #texto {
     text-align: center;
+    margin: 0 auto;
   }
 
   #sobre #mosaico {
@@ -222,7 +221,7 @@ height: 100%;
   }
 
   #mosaico .col-md-4 {
-    margin-bottom: 15px; /* Ajuste a margem inferior para um melhor alinhamento */
+    margin-bottom: 15px;
   }
 
   #mosaico img {
