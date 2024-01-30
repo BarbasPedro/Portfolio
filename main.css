@@ -186,33 +186,52 @@ height: 100%;
 }
 
 @media screen and (max-width: 640px) {
-  body{
+  body {
     text-align: center;
     justify-content: center;
+  }
+
+  .carousel-inner {
+    height: 250px;
+    overflow-y: hidden;
   }
 
   #carousel {
     height: 250px;
     overflow-y: hidden;
+    margin-bottom: 20px;
   }
+
   .container.mosaico {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .container.mosaico img{
-    margin-bottom: 15px;
+  .container.mosaico img {
+    margin: 15px;
   }
 
-  .col-7{
+  #sobre #texto {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  #sobre #mosaico {
     width: 100%;
   }
 
-  .col-5{
-    width: 100%;
+  #mosaico .col-md-4 {
+    margin-bottom: 15px; /* Ajuste a margem inferior para um melhor alinhamento */
   }
 
-  h5{
+  #mosaico img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  h5 {
     margin-top: 50px;
   }
 
@@ -220,12 +239,12 @@ height: 100%;
     width: 100%;
   }
 
-  #linguagens{
+  #linguagens {
     padding: 0;
     flex-wrap: wrap;
   }
 
-  #linguagens li img{
+  #linguagens li img {
     padding: 20px;
   }
 
@@ -238,21 +257,16 @@ height: 100%;
     margin-bottom: 20px;
   }
 
-  #imgProjDesenvolvidos .col-4 img{
+  #imgProjDesenvolvidos .col-4 img {
     width: 100%;
   }
 
   #modulos {
     margin-top: 0px;
   }
-
-  #modulos{
-    margin-top: 30px auto 10px auto;
-    }
 }
 
 @media screen and (min-width: 641px) and (max-width: 1023px) {
-
   .container.mosaico {
     display: flex;
     flex-direction: column-reverse;
@@ -266,13 +280,13 @@ height: 100%;
     width: 100%;
   }
 
-  #mosaico .col-md-4{
+  #mosaico .col-md-4 {
     margin-bottom: 24px;
   }
 
   #mosaico img:hover {
     width: 120%;
-}
+  }
 
   #projetos img {
     width: 100%;
