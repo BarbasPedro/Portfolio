@@ -243,6 +243,30 @@ height: 100%;
 
   #mosaico img:hover {
     width: 100%;
+    border: none;
+    padding: 0;
+  }
+
+  #mosaico {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza as colunas na horizontal */
+  }
+
+  #mosaico img {
+    width: 100%; /* Ocupa a largura total da coluna */
+    border-radius: 15px;
+    margin-bottom: 0;
+  }
+
+  #mosaico .row {
+    justify-content: center;
+    margin: 0;
+  }
+
+  #mosaico .col-md-4 {
+    width: 100%;
+    margin-bottom: 8px;
   }
 
   #linguagens{
@@ -278,10 +302,43 @@ height: 100%;
 }
 
 @media screen and (min-width: 641px) and (max-width: 1023px) {
+  .carousel-inner{
+    height: 300px;
+  }
 
   .container.mosaico {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  #mosaico {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #mosaico img {
+    width: 100%; /* Ocupa a largura total da coluna */
+    border-radius: 15px;
+    margin-bottom: 0;
+  }
+
+  #mosaico img:hover {
+    width: 100000%;
+    border: none;
+    padding: 0;
+  }
+
+  #mosaico .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+  }
+
+  #mosaico .col-md-4 {
+    width: 100%;
+    margin: auto auto 8px auto
   }
 
   #texto {
