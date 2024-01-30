@@ -119,12 +119,25 @@ header, footer {
     margin: 0 auto;
   }
 
-  #mosaico .col-md-4 {
+
+  .container.mosaico {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #mosaico{
     width: 100%;
     margin-bottom: 15px;
   }
 
+  #mosaico .col-md-4 {
+    width: 100%;
+  }
+
   #mosaico img {
+    margin-top: 100px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -136,6 +149,7 @@ header, footer {
 
   #linguagens {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
