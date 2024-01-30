@@ -323,12 +323,6 @@ height: 100%;
     margin-bottom: 0;
   }
 
-  #mosaico img:hover {
-    width: 100000%;
-    border: none;
-    padding: 0;
-  }
-
   #mosaico .row {
     display: flex;
     flex-direction: row;
