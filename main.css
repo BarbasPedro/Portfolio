@@ -2,16 +2,32 @@ body {
   font-family: 'Kanit', sans-serif;
 }
 
-.container {
+.container{
   width: 100%;
 }
 
-h2 {
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Revalia', sans-serif;
+}
+
+h2{
   text-align: center;
 }
 
-header, footer {
+hr {
+  margin: 50px 0;
+}
+
+header {
+  background-color: #fff;
+}
+
+footer{
   text-align: center;
+}
+
+#pB {
+  font-family: 'Baumans', system-ui;
 }
 
 #ponto {
@@ -19,25 +35,104 @@ header, footer {
   font-size: 3rem;
 }
 
-.carousel-item img,
-#projetos img,
-#mosaico img {
+.carousel-item img {
   width: 100%;
-  height: 100%;
 }
 
+#menuNavegacao li {
+  margin-left: 8px;
+}
+
+#menuNavegacao a,
+#linkGithub {
+  text-decoration: none;
+  color: black;
+}
+
+#menuNavegacao a:hover,
+#linkGithub:hover,
+#tecnologias li:hover,
+.nav-projetos button:hover,
+.social-links i:hover,
 #mosaico img:hover {
+  border: 1px solid #ccc;
+  color: rgb(208, 19, 19);
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 3px;
+}
+
+#mosaico img:hover{
   width: 300%;
   position: relative;
 }
 
+#mosaico img {
+  border-radius: 15px;
+}
+
+#mosaico .row {
+  justify-content: space-between;
+  margin: 1px;
+}
+
 #mosaico .col-md-4 {
-  margin-bottom: 24px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 2px;
+  width: 32.5%;
+  align-content: center;
 }
 
 #texto {
   margin-left: 15px;
+}
+
+#linguagens li:hover {
+  width: 100px;
+}
+
+#menuNavegacao a.active,
+.nav-projetos button.active {
+  color: black;
+  text-decoration: underline rgb(208, 19, 19);
+  font-weight: bold;
+}
+
+.carousel-inner {
+  height: 500px;
+  overflow-y: hidden;
+}
+
+#mosaico {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 10px;
+  margin-right: 15px;
+  margin-bottom: 50px;
+}
+
+#mosaico img{
+  width: 100%;
+}
+
+.container.mosaico {
+  display: flex;
+}
+
+#skills {
+  width: 100%;
+}
+
+#linguagens{
+  justify-content: center;
   text-align: center;
+  list-style: none;
+  display: flex;
+  margin: 30px auto 0 auto;
+  height: 100%;
+  width: 100%;
 }
 
 #linguagens li {
@@ -49,8 +144,18 @@ header, footer {
   padding: 0;
 }
 
-#linguagens li img {
+#linguagens li img{
   padding: 0 20px;
+}
+
+#linkGithub {
+  text-align: center;
+  width: 100px;
+  margin-left: 12px;
+}
+
+#imgProjDesenvolvidos {
+  margin: 16px 0;
 }
 
 #imgProjDesenvolvidos .col-4 img {
@@ -70,12 +175,17 @@ header, footer {
   margin: auto;
 }
 
-.nav-projetos {
+#projetos img {
+width: 100%;
+height: 100%;
+}
+
+.nav-projetos{
   height: 100%;
   justify-content: space-between;
 }
 
-.nav-projetos button {
+.nav-projetos button{
   color: black;
   background-color: #fff;
   border: none;
@@ -89,74 +199,59 @@ header, footer {
   justify-content: center;
 }
 
-.social-links i {
+.social-links i{
   font-size: 3rem;
   margin: 0 15px;
   color: black;
 }
 
-@media screen and (max-width: 640px){
-  body {
+@media screen and (max-width: 640px) {
+  body{
     text-align: center;
     justify-content: center;
   }
 
-  .carousel-inner,
   #carousel {
     height: 250px;
     overflow-y: hidden;
-    margin-bottom: 20px;
   }
-
-  .container.mosaico {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-
-  #texto {
-    margin: 0 auto;
-  }
-
-
   .container.mosaico {
     display: flex;
     flex-direction: column-reverse;
   }
-  #mosaico{
-    width: 100%;
+
+  .container.mosaico img{
     margin-bottom: 15px;
   }
 
-  #mosaico .col-md-4 {
+  .col-7{
     width: 100%;
   }
 
-  #mosaico img {
-    margin-top: 100px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    padding: 10px;
+  .col-5{
     width: 100%;
-    height: auto;
-    margin: 0 auto;
   }
 
-  h5 {
+  h5{
     margin-top: 50px;
   }
 
-  #linguagens {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  #texto {
+    text-align: center;
+    margin: 0 auto;
   }
 
-  #linguagens li {
-    width: 80px;
-    margin: 8px;
+  #mosaico img:hover {
+    width: 100%;
+  }
+
+  #linguagens{
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  #linguagens li img{
+    padding: 20px;
   }
 
   #imgProjDesenvolvidos .col-4 {
@@ -168,7 +263,7 @@ header, footer {
     margin-bottom: 20px;
   }
 
-  #imgProjDesenvolvidos .col-4 img {
+  #imgProjDesenvolvidos .col-4 img{
     width: 100%;
     max-height: none;
   }
@@ -176,24 +271,43 @@ header, footer {
   #modulos {
     margin-top: 0px;
   }
+
+  #modulos{
+    margin-top: 30px auto 10px auto;
+    }
 }
 
-@media screen and (min-width: 641px) and (max-width: 1023px){
-  .container.mosaico,
-  #texto,
-  #mosaico .col-md-4 {
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+  .container.mosaico {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #texto {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #mosaico {
     width: 100%;
   }
 
-  ..carousel-inner{
-    height: 300px;
+  #mosaico .col-md-4{
+    margin-bottom: 24px;
   }
 
   #mosaico img:hover {
     width: 120%;
+}
+
+  #projetos img {
+    width: 100%;
+    height: max-content;
   }
 
-  #imgProjDesenvolvidos .col-4 img {
+  #imgProjDesenvolvidos .col-4 img{
+    width: 100%;
     max-height: none;
   }
 
