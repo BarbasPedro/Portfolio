@@ -67,6 +67,10 @@ footer{
   position: relative;
 }
 
+#mosaico .col-md-4{
+  margin-bottom: 24px;
+}
+
 #texto {
   margin-left: 15px;
 }
