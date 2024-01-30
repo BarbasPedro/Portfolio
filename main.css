@@ -119,7 +119,8 @@ header, footer {
     margin: 0 auto;
   }
 
-  #sobre #mosaico .col-md-4 {
+  #mosaico .col-md-4 {
+    width: 50%;
     margin-bottom: 15px;
   }
 
