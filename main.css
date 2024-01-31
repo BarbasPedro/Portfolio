@@ -364,9 +364,13 @@ height: 100%;
     width: 120%;
 }
 
-  #projetos img {
+  #imgProjDesenvolvidos .col-4 {
     width: 100%;
-    height: max-content;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
   }
 
   #imgProjDesenvolvidos .col-4 img{
